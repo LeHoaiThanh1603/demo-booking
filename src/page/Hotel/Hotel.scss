@@ -1,0 +1,53 @@
+.hotel {
+    height: calc(100vh - 70px);
+    &-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    &-info {
+        margin-top: 20px;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        &__desciptions {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+
+            & > div {
+                font-weight: 600;
+            }
+        }
+    }
+
+    &-collapse {
+        margin-top: 20px;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &-room {
+        &__images {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding: 16px;
+            margin: 20px;
+            &--img {
+                padding: 0 4px;
+            }
+
+            &--roomname {
+                font-size: 2rem;
+                margin-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}

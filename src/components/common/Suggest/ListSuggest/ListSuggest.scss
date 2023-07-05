@@ -1,0 +1,244 @@
+.iscard {
+    margin: 0 10px;
+}
+
+.list {
+    background: rgba(242, 243, 243, 1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    &-container {
+        &__heading {
+            // position: fixed;
+            height: 50px;
+            font-size: 2.5rem;
+        }
+        &__box {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            &--images {
+                &__img {
+                    padding: 5px;
+                }
+            }
+            &--description {
+                padding: 10px 20px;
+
+                &__wrapperspacious {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+                &__spacious {
+                    display: flex;
+                    align-items: center;
+                    font-weight: 600;
+                    gap: 10px;
+                    font-size: 1.6rem;
+                    margin-bottom: 10px;
+                }
+
+                &__convenient {
+                    margin: 5px;
+                    margin-bottom: 10px;
+
+                    font-weight: 600;
+                    font-size: 1.4rem;
+                    display: inline-block;
+                    background-color: rgb(232, 254, 245);
+                    border-radius: 14px;
+                    padding: 5px 10px;
+                    color: rgb(0, 135, 90);
+                }
+
+                &__btn {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+        &__descriptions {
+            padding: 20px;
+            border-radius: 10px;
+            background: #fff;
+            margin-bottom: 12px;
+            box-shadow: 0px 1px 2px rgb(3 18 26 / 20%);
+
+            &--describe {
+                width: 100%;
+
+                display: flex;
+                justify-content: space-between;
+
+                & > div {
+                    width: 100%;
+                    align-items: center;
+                    gap: 10px;
+                    font-size: 1.6rem;
+                    display: flex;
+                    padding: 20px 10px;
+                    border-bottom: 1px solid #ccc;
+                }
+
+                &__room {
+                    display: flex;
+                    justify-content: flex-end;
+                    color: rgb(255, 0, 0);
+                }
+            }
+
+            &--lable {
+                &__item {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    padding: 12px;
+                    & > p {
+                        cursor: pointer;
+                        color: rgba(104, 113, 118, 1);
+                        font-weight: 600;
+                    }
+                }
+
+                &__old {
+                    text-decoration-line: line-through;
+                    color: rgba(104, 113, 118, 1);
+                }
+
+                &__new {
+                    & > strong {
+                        font-size: 2rem;
+                        color: rgb(255, 94, 31);
+                    }
+                    & > div {
+                        display: flex;
+                        justify-content: flex-end;
+                        color: rgba(104, 113, 118, 1);
+                    }
+                }
+
+                &__price {
+                    cursor: pointer;
+                    margin-bottom: 10px;
+                    font-weight: 700;
+                    color: rgba(2, 100, 200, 1);
+                }
+
+                &__btn {
+                    color: #fff;
+                    background: rgb(255, 94, 31);
+                }
+
+                & > .active-green p,
+                svg {
+                    color: rgb(0, 135, 90);
+                }
+
+                & > .active-blue p {
+                    color: rgba(1, 148, 243, 1);
+                }
+            }
+        }
+    }
+}
+
+.view {
+    display: flex;
+    &-images {
+        width: 70%;
+        padding: 0 8px;
+    }
+
+    &-des {
+        padding: 0 8px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &__content {
+            font-weight: 600;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+
+            & > h4 {
+                margin: 10px 0;
+            }
+
+            & > ul {
+                padding-left: 20px;
+                margin: 10px 0;
+                list-style-type: circle;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr); /* chia danh sách thành 2 cột có độ rộng bằng nhau */
+                grid-gap: 1px; /* khoảng cách giữa các phần tử */
+                grid-column-gap: 15px;
+                & > li {
+                }
+            }
+
+            &--lable {
+                display: flex;
+                gap: 10px;
+            }
+        }
+
+        &__footer {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            box-shadow: rgb(27 27 27 / 10%) 0px -4px 8px 0px, rgb(27 27 27 / 10%) 0px 1px 3px 0px;
+            padding: 12px;
+
+            &--price {
+                & > strong {
+                    color: rgb(255, 94, 31);
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+.tooltip-element {
+    padding: 10px;
+    overflow: hidden;
+    &__item {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px 0;
+        & > div {
+            display: flex;
+        }
+    }
+
+    &__border {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+
+    &__value {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.border-top {
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+}
+
+.flex-end {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+//loading
+
+.ant-skeleton {
+    width: 100% !important;
+}

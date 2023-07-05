@@ -1,0 +1,31 @@
+.question {
+    & > h2 {
+        text-align: center;
+    }
+}
+
+.btn-create {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+}
+
+.col-center {
+    text-align: center;
+}
+
+.table .ant-table-cell {
+    text-align: center !important;
+}
+.modal {
+    &__item {
+        margin-bottom: 20px;
+    }
+}
+
+.custom-table {
+    .custom-table-row:hover {
+        cursor: pointer;
+        // Thêm các hiệu ứng hover khác tại đây
+    }
+}

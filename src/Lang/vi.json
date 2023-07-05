@@ -1,0 +1,22 @@
+{
+    "common": {
+        "header": {
+            "room-situation": {
+                "title": "Room Map",
+                "room-map": "Roommap"
+            },
+            "room-delivery": {
+                "title": "Room Delivery"
+            },
+            "hotel": {
+                "name": "tieng viet",
+                "title": "HotelTitle"
+            },
+            "roomInfinity": "infini room 1"
+        },
+        "sidebar": {
+            "title": "Side bar",
+            "name": "task name"
+        }
+    }
+}

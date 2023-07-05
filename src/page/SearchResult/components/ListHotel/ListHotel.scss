@@ -1,0 +1,100 @@
+.searchresult {
+    padding: 0 10px;
+    &-content {
+        margin-top: 16px;
+        padding: 16px;
+        background: #fff;
+        border: 1px solid #c6c6c6;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+        &__wrapper {
+            display: flex;
+            gap: 10px;
+
+            &--img {
+                position: relative;
+                & > img {
+                    height: 100%;
+                    object-fit: cover;
+                }
+                &-child {
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                }
+            }
+
+            &--describe {
+                display: flex;
+                flex: 1;
+            }
+
+            &--describecontent {
+                flex: 1;
+                max-width: 70%;
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+
+                &-name {
+                    align-items: center;
+                    display: flex;
+                }
+
+                &-location {
+                    display: flex;
+                    gap: 12px;
+                    & > p {
+                        &:nth-child(1) {
+                            color: #0071c2;
+                            text-decoration: underline;
+                        }
+                        &:nth-child(2) {
+                            color: #0071c2;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.rate {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 14px;
+    &-ratecontent {
+        display: flex;
+
+        & > div {
+            margin-right: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        &__value {
+            & > div {
+                font-size: 1.6rem;
+                font-weight: 600;
+            }
+
+            & > span {
+                font-size: 1.2rem;
+                color: #6b6b6b;
+            }
+        }
+    }
+}
+
+.description {
+    font-size: 1.4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}

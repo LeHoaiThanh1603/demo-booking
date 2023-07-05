@@ -1,0 +1,33 @@
+:root {
+    --app-container: #3d6a9e;
+    --main-text-color: #fff;
+    --second-text-color: #1f1c2e;
+    --secondary-color: #4a4a4a;
+    --link-color: #1f1c2e;
+    --link-color-hover: #c3cff4;
+    --link-color-active: #fff;
+    --link-color-active-bg: #1f1c2e;
+    --projects-section: #fff;
+    --line-color: rgba(5, 5, 5, 0.06);
+    --room-bg: #fff;
+    --scrollbar-bg: #fff;
+    --scrollbar-thumb: #f5f5f5;
+    --header-color: #3d6a9e;
+    --border-radius-8: 8px;
+    --border-radius-4: 4px;
+}
+
+.dark:root {
+    --app-container: #111827;
+    --room-bg: #f5f5f5;
+    --main-text-color: #fff;
+    --second-text-color: #1f1c2e;
+    --secondary-color: #4a4a4a;
+    --projects-section: #1f2937;
+    --link-color: rgba(255, 255, 255, 0.8);
+    --link-color-hover: rgba(195, 207, 244, 0.1);
+    --link-color-active-bg: rgba(195, 207, 244, 0.2);
+    --line-color: rgba(255, 255, 255, 0.2);
+    --scrollbar-bg: #1f2937;
+    --scrollbar-thumb: #f5f5f5;
+}

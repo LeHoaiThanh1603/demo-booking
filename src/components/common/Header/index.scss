@@ -1,0 +1,41 @@
+.header {
+    background: #003580;
+    height: 12.4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: columns;
+    &__container {
+        width: 120rem;
+
+        &-nav {
+            padding: 1.2rem 3.2rem 0.8rem;
+            flex: 1 1;
+            justify-content: space-between;
+            display: flex;
+        }
+    }
+
+    &__heading {
+        font-size: 2.4rem;
+        color: #fff;
+    }
+
+    &__select {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        &-lang {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: #ddd;
+            width: 4rem;
+            height: 4rem;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.btn-action {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.form-physicsroom {
+    &__item {
+        margin-bottom: 20px;
+    }
+}
+
+.room {
+    height: calc(100vh - 70px);
+}
+
+.room-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    & > h2 {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    &__btn-add {
+        padding: 0 30px;
+        display: flex;
+        justify-content: flex-end;
+    }
+}

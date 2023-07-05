@@ -1,0 +1,21 @@
+.Convenient {
+    padding-bottom: 30px;
+    &-utilities {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 5px;
+        img {
+            width: 40px;
+        }
+        span {
+            font-weight: 600;
+        }
+    }
+}

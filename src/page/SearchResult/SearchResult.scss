@@ -1,0 +1,13 @@
+.searchresult-header {
+    padding: 0 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__suggest {
+        font-size: 1.8rem;
+        display: flex;
+        gap: 10px;
+    }
+}

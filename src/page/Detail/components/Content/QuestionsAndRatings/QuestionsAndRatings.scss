@@ -1,0 +1,189 @@
+.question {
+    &__heading {
+        margin-bottom: 20px;
+    }
+}
+
+.ratings {
+    &__heading {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    &__header {
+        height: 100%;
+
+        &-title {
+            text-align: center;
+            margin: 20px 0;
+        }
+        &-box {
+            border: 1px solid #ccc;
+            display: flex;
+            height: 100px;
+            &__left {
+                padding: 20px;
+                width: fit-content;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-right: 1px solid #ccc;
+
+                &-quantity {
+                    & > strong {
+                        font-size: 2rem;
+                    }
+                }
+                &-allrate {
+                    font-size: 1.4rem;
+                    white-space: nowrap;
+                }
+            }
+
+            &__right {
+                padding: 20px;
+                width: 100%;
+                &-list {
+                    width: 100%;
+                    height: 100%;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    justify-items: center;
+                    align-items: center;
+                }
+
+                &-item {
+                    font-size: 1.2rem;
+                    display: flex;
+                    align-items: center;
+                    & > span {
+                        min-width: 80px;
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__nav {
+        &-evaluate {
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            &__range {
+                margin: 10px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+
+    &__footer {
+        cursor: pointer;
+        text-align: center;
+        color: #026088;
+    }
+}
+
+.comments {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    &__left {
+        max-width: 15%;
+        &-name {
+            font-weight: bold;
+        }
+    }
+
+    &__center {
+        max-width: 70%;
+
+        &-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        &-content {
+            font-size: 1.5rem;
+            font-style: italic;
+        }
+
+        &-des {
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px 50px;
+            &__item {
+                font-size: 1.2rem;
+                & > span {
+                    min-width: 80px;
+                }
+                display: flex;
+            }
+        }
+    }
+
+    &__right {
+        max-width: 15%;
+
+        &-reply {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            transition: all 0.2s linear;
+            &:hover {
+                cursor: pointer;
+                color: #013d57;
+            }
+        }
+    }
+}
+
+.reply {
+    max-height: 0; /* Sử dụng max-height thay vì height */
+    overflow: hidden;
+    margin: 20px;
+    border-radius: 10px;
+
+    transition: max-height 0.4s ease-in-out; /* Áp dụng transition cho max-height */
+    background: #a1daf2;
+}
+
+.sub-reply {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    &__email {
+        padding: 20px 20px 0;
+    }
+
+    &__content {
+        padding: 20px;
+        margin-bottom: 20px;
+        height: 100%;
+        flex: 1;
+    }
+}
+
+.unlock {
+    max-height: 300px; /* Thay đổi max-height thành 0 để thu gọn nội dung */
+}
+
+.img-wraper .ant-image {
+    width: 100%;
+}
+
+.rowStep {
+    padding: 5px 20px;
+    align-items: center;
+}

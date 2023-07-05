@@ -1,0 +1,44 @@
+.headerHotel {
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    right: 0;
+    left: 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+    &-name {
+        padding: 0 40px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        &__brand {
+            display: flex;
+            align-items: center;
+
+            gap: 10px;
+        }
+
+        &__options {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+}
+
+.sidebarHotel {
+    margin-top: 64px;
+}
+
+.content-hotel {
+    overflow-y: auto;
+    height: calc(100vh - 64px);
+    margin-top: 64px;
+    overflow: 'auto';
+    max-height: '100%';
+    margin: '24px 16px';
+    padding: 24px;
+    min-height: 280;
+    background: colorBgContainer;
+}

@@ -1,0 +1,82 @@
+.home__header-form {
+    align-items: end;
+    &-item > .ant-form-item-row {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.heading-title {
+    margin-bottom: 20px;
+}
+
+.main {
+    &__destination-list {
+        margin: 20px 0;
+        &-item {
+            padding: 10px;
+        }
+
+        &-href {
+            display: block;
+            color: #3598dc;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.hotels-city {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Tạo 5 cột có độ rộng bằng nhau */
+    grid-gap: 5px; /* Khoảng cách giữa các cột */
+}
+
+.main__destination-list-item {
+    display: flex;
+}
+
+.main__destination-list-item .linkto {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.main__destination-list-item .ant-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.main__destination-list-item .ant-card-body {
+    flex-grow: 1;
+}
+
+.main__destination-list-item .ant-card-cover img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+// // CSS
+// .main__destination-list-item {
+//     display: flex;
+//     align-items: stretch; /* Đảm bảo tất cả các Card có chiều cao bằng nhau */
+// }
+
+// .main__destination-list-item .ant-card {
+//     display: flex;
+//     flex-direction: column;
+// }
+
+// .main__destination-list-item .ant-card-body {
+//     flex-grow: 1; /* Đảm bảo nội dung của Card mở rộng để lấp đầy chiều cao tối đa */
+// }
+
+// .main__destination-list-item .ant-card-cover img {
+//     object-fit: cover; /* Đảm bảo hình ảnh bên trong Card được hiển thị đúng tỷ lệ */
+// }

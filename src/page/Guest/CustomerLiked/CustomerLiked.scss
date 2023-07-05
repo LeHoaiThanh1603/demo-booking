@@ -1,0 +1,88 @@
+.viewed-hotel {
+    margin-bottom: 40px;
+}
+
+.viewed__room {
+    &-card {
+        padding: 10px;
+        &__imgbox3 {
+            display: flex !important;
+        }
+
+        &__imgmain {
+            width: 100%;
+        }
+
+        &__img {
+            width: 100%;
+            padding: 0 5px;
+        }
+
+        &__main {
+            position: relative;
+            &-liked {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.2s ease-in-out;
+                &:hover {
+                    cursor: pointer;
+                    background: rgba(0, 0, 0, 0.5);
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.list__item {
+    overflow: hidden;
+    padding-bottom: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    &-content {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        line-height: 2.4rem;
+        overflow: hidden;
+        position: relative;
+    }
+}
+
+.room-info .ant-card-meta-title {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.room-info .ant-card-meta-description {
+    font-weight: 600;
+}
+
+// .list-item {
+//     max-height: 200px;
+//     overflow: hidden;
+//     padding-bottom: 10px;
+//     display: -webkit-box;
+//     -webkit-box-orient: vertical;
+//     -webkit-line-clamp: 4;
+// }
+
+// .list-item .ant-list-item-main {
+//     display: -webkit-box;
+//     -webkit-box-orient: vertical;
+//     -webkit-line-clamp: 4;
+//     line-height: 2.4rem;
+//     overflow: hidden;
+//     position: relative;
+// }
