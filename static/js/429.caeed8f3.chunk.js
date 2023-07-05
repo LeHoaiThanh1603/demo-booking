@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcrm_booking=self.webpackChunkcrm_booking||[]).push([[429],{1429:function(e,a,t){t.d(a,{m4:function(){return n},sE:function(){return i},_U:function(){return b},eu:function(){return c}});t(2791);t.p;t.p;var n=t.p+"static/media/dateIcon.51e8bc0ba626eef35ead54bb6da8e02e.svg";var c=t.p+"static/media/nightIcon.de2d99b5374869f18b0dbf576842bfa7.svg";var i=t.p+"static/media/guestRoom.6559935b7b8b270ea75851240408098a.svg";var b=t.p+"static/media/hotel-icon.1c1f5a70026aa55c12fe843a4b30379c.svg"}}]);
+//# sourceMappingURL=429.caeed8f3.chunk.js.map
